@@ -12,7 +12,7 @@ We wanted to plan out what to include in our travel planning app while consideri
 * Yicheng: Application Management
 * Tristan: Budgeting and Item List Logic
 ### Workflow
-we plan to each work on our code separately, but meet up frequently to ensure our individual parts will work well together.
+We plan to each work on our code separately, but meet up frequently to ensure our individual parts will work well together.
 ## Predicted Milestones
 * Finalize UI and Class diagram
 * Begin work on individual tasks and responsibilities
