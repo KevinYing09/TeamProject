@@ -12,7 +12,7 @@ In the prototype users should be able to add events and budget.
 ## Next Steps
 In the coming weeks we will work on finishing the prototype. This will likely be web based and we will move it to a mobile application later.
 ## Class Diagram
-Coming soon...
+![Class Diagram](https://github.com/KevinYing09/TeamProject/blob/main/docs/umldiagram.png "Class Diagram")
 ## Gui Mockup
 Coming soon...
 ## Pitch Document
