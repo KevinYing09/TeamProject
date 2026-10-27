@@ -1,5 +1,6 @@
 # TeamProject
 ## Kevin Ying, Elisa Tandra, Yicheng Deng, Isaac Cheung, Tristan Medford
+ReadMe made by Kevin Ying
 ## Purpose
 This project aims to answer the the FBLA Mobile Application Development prompt for 2026-2027. It aims to develop an application to streamline the process of planning a trip by allowing different people to collaborate and schedule, budget, and organize their trip.
 ## Audience
