@@ -8,3 +8,11 @@ The audience for this project is anyone who is planning a vacation.
 This application should be able to run on iOS, however a browser alternative may be used for early stages.
 ## Prototype
 In the prototype users should be able to add events and budget.
+## Next Steps
+In the coming weeks we will work on finishing the prototype. This will likely be web based and we will move it to a mobile application later.
+## Class Diagram
+Coming soon...
+## Gui Mockup
+Coming soon...
+## Pitch Document
+[Pitch Document Link](https://github.com/KevinYing09/TeamProject/blob/main/docs/project-pitch.md)
