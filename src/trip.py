@@ -1,3 +1,4 @@
+#Kevin Ying
 #Add import statements for other classes once complete
 class Trip:
   def __init__(self, tripld, title, destination, startDate, endDate, totalBudget, inviteCode):
