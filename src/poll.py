@@ -1,3 +1,5 @@
+#Kevin Ying
+
 class Poll:
   def __init__(self, pollID, question, createdByUserID, isClosed):
     self.pollID = pollID
