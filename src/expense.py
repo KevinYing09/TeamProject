@@ -19,7 +19,7 @@ class Expense:
         cost_per_person = self.amount / len(user_ids)
         for uid in user_ids:
             split = ExpenseSplit(uid, cost_per_person)
-            split.is_paid = (uid == self.paid_by_user_id)  # True if they paid up front
+            split.is_paid = (uid == self.paid_by_user_id) 
             self.splits.append(split)
 
 
