@@ -1,7 +1,7 @@
 #Yicheng Deng
 #Add import statements for other classes once complete
 import datetime
-class Trip:
+class ChatMessage:
   def __init__(self, messageID, senderID, messagetext,time):
       self.messageID = messageID
       self.senderID = senderID
