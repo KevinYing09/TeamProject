@@ -1,37 +1,32 @@
 class ExpenseSplit:
-    # Tracks one user's share of an expense
+    # Tracks how much one person owes
     def __init__(self, user_id, amount_owed):
         self.user_id = user_id
         self.amount_owed = amount_owed
-        self.is_paid = False  # Starts as unpaid by default
+        self.is_paid = False
 
 
 class Expense:
-    # Represents a single cost (like dinner or gas)
-    def __init__(self, description, amount, paid_by_user_id):
-        self.description = description
+    # Represents a single item bought
+    def __init__(self, amount, paid_by_user_id):
         self.amount = amount
-        self.paid_by_user_id = paid_by_user_id  # Who paid the upfront bill
-        self.splits = []  # Holds ExpenseSplit objects for everyone sharing the cost
+        self.paid_by_user_id = paid_by_user_id
+        self.splits = []
 
-    # Divides the total cost equally among all users
+    # Splits the total cost equally among everyone
     def split_equally(self, user_ids):
-        per_person = self.amount / len(user_ids)
+        cost_per_person = self.amount / len(user_ids)
         for uid in user_ids:
-            split = ExpenseSplit(uid, per_person)
-            # Mark as paid automatically for the person who paid upfront
-            if uid == self.paid_by_user_id:
-                split.is_paid = True
+            split = ExpenseSplit(uid, cost_per_person)
+            split.is_paid = (uid == self.paid_by_user_id)  # True if they paid up front
             self.splits.append(split)
 
 
 class Trip:
-    # Holds all trip details and list of expenses
-    def __init__(self, title, total_budget):
-        self.title = title
-        self.total_budget = total_budget
-        self.expenses = []  # Holds Expense objects added to this trip
+    # Tracks the overall trip expenses
+    def __init__(self):
+        self.expenses = []
 
-    # Adds up the total amount of all expenses on the trip
+    # Adds up total cost of all expenses
     def calculate_total_expenses(self):
         return sum(e.amount for e in self.expenses)
