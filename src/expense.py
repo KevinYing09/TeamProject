@@ -21,13 +21,3 @@ class Expense:
             split = ExpenseSplit(uid, cost_per_person)
             split.is_paid = (uid == self.paid_by_user_id) 
             self.splits.append(split)
-
-
-class Trip:
-    # Tracks the overall expenses
-    def __init__(self):
-        self.expenses = []
-
-    # Adds up total cost of all expenses
-    def calculate_total_expenses(self):
-        return sum(e.amount for e in self.expenses)
