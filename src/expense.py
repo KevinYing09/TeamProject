@@ -1,3 +1,4 @@
+#Tristan Medford
 class ExpenseSplit:
     # Tracks how much one person owes
     def __init__(self, user_id, amount_owed):
