@@ -23,7 +23,7 @@ class Expense:
 
 
 class Trip:
-    # Tracks the overall trip expenses
+    # Tracks the overall expenses
     def __init__(self):
         self.expenses = []
 
